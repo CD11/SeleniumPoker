@@ -25,10 +25,13 @@ public interface AIStrategy {
 		  for(AIPlayer p : players){
 			if(!p.equals(player)){
 				others.add(p);
-				has3 = p.getHand().visibleHand().isThreeOfAKind(); 
+				if(p.getHand().visibleHand().isThreeOfAKind()){
+					has3 = p.getHand().visibleHand().isThreeOfAKind(); 
+				}
 				if(p.getLastOption() != null){
 					first = false;
-				}	 
+				}
+			
 			}
 				
 		  }

@@ -39,11 +39,13 @@ public class Strategy1Tests extends AbstractSeleniumTest {
     	 *  - p:  high card
     	 */
     	
-    	this.indexPage.connect.click();
+      	this.indexPage.connect.click();
     	this.waitForDisplayed(this.indexPage.open).isEnabled();
+    	this.delay(2);
     	this.indexPage.open.click(); // defaults is 1 player
     	this.waitForDisplayed(this.indexPage.rig).isEnabled();
     	this.indexPage.rig.click();
+    	
     	
     	/************************* Set inital hands ************************/
     	// Player  highcard 
@@ -154,11 +156,13 @@ public class Strategy1Tests extends AbstractSeleniumTest {
        	 *  - p:   has 1 pair
        	 */
     	
-    	this.indexPage.connect.click();
+      	this.indexPage.connect.click();
     	this.waitForDisplayed(this.indexPage.open).isEnabled();
+    	this.delay(2);
     	this.indexPage.open.click(); // defaults is 1 player
     	this.waitForDisplayed(this.indexPage.rig).isEnabled();
     	this.indexPage.rig.click();
+    	
     	
     	/************************* Set inital hands ************************/
     	
